@@ -2,7 +2,7 @@ from stats import get_num_of_words, get_num_of_letters, sort_dictionary
 import sys
 
 def get_book_text(filepath):
-    with open(filepath) as f:
+    with open(filepath, encoding="utf8") as f:
         return f.read()
 
 def print_book_report(book_path):
