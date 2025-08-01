@@ -1,4 +1,5 @@
 from stats import get_num_of_words, get_num_of_letters, sort_dictionary
+import sys
 
 def get_book_text(filepath):
     with open(filepath) as f:
@@ -20,7 +21,7 @@ def print_book_report(book_path):
 
 
 def main():
-    book_path = "books/frankenstein.txt"
+    # book_path = "books/frankenstein.txt"
     # book_text = get_book_text(book_path)
     # print(book_text)
     # num_words = get_num_of_words(book_text)
@@ -28,6 +29,13 @@ def main():
     # letter_counters = get_num_of_letters(book_text)
     # print(letter_counters)
     # print(sort_dictionary(letter_counters))
-    print_book_report(book_path)
+    # print_book_report(book_path)
+
+    if len(sys.argv) != 2:
+        print("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)
+    
+    print(sys.argv[1])
+    print_book_report(sys.argv[1])
 
 main()
