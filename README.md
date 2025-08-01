@@ -2,6 +2,10 @@
 
 BookBot is my first [Boot.dev](https://www.boot.dev) project!
 
+With this project one can get a small report about a text file. The report includes the following:
+- how many words there are in total.
+- which and how many alphabetic letters there are in the text.
+
 ## Installation python
 1. Install python first in one of the following ways:
 - from [python.org](https://www.python.org/downloads)
